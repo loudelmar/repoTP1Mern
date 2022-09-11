@@ -16,7 +16,7 @@ function getCountryByIso3(isoCode) {
  * @returns {string}
  */
 function getCountryTranslatedName(isoCode, language) {
-    //Complete with your code
+    let countries = new Intl.DisplayNames(['es'], { type: 'iso3' });
 }
 /**Get an array of all the countries with the specified subregion
  * @param  {string} subregion
