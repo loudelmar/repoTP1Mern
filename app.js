@@ -16,14 +16,15 @@ function getCountryByIso3(isoCode) {
  * @returns {string}
  */
 function getCountryTranslatedName(isoCode, language) {
-    let countries = new Intl.DisplayNames(['es'], { type: 'iso3' });
+    //let countries = new Intl.DisplayNames(['es'], { type: 'iso3' });
 }
 /**Get an array of all the countries with the specified subregion
  * @param  {string} subregion
  * @returns {Array}
  */
 function getCountriesBySubregion(subregion) {
-    //Complete with your code
+    const array = countries.filter(subregion => subregion.subregion === subregion);
+    return { array }
 }
 
 function main() {
